@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+      *{
+        scroll-behavior: smooth;
+      }
+      body{
+        margin: 0px;
+      }
+      header{
+        display:flex;
+        background-color: #be3144;
+        padding: 20px;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+      }
+      header ul{
+        list-style: none;
+      }
+      header ul li{
+        display: inline;
+        font-size: 22px;
+        font-family: Poppins;
+        color: white;
+        margin: 20px;
+      }
+      main{
+        margin-top: 0px;
+      }
+      .Split{
+        flex: 1;
+      }
+      .Section{
+        width:100%;
+        min-height:894px;
+        font-family: Raleway;
+        color:white;
+        
+      }
+      .About{
+        background-color: #222224;
+        display:flex;
+        flex-direction: column;
+        justify-content:center ;
+        align-items: center;
+        height:984px;
+      }
+      .About h1{
+        font-size: 44px;
+      }
+      .Portfolio{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #44567c;
+      }
+      .Portfolio h1{
+        font-size: 44px;
+        margin-top: 80px;
+        text-decoration: underline;
+      }
+      .Together{
+        background-color: #303942;
+        display:flex;
+        flex-direction: column;
+        justify-content:center ;
+        align-items: center;
+        align-items: center;
+      }
+      .Together h1{
+        font-size: 44px;
+      }
+      footer{
+        display:flex;
+        justify-content: center;
+        background-color: #303942;
+        font-family: Poppins;
+        color:white;
+        border-top: 3px solid #be3144;
+        padding: 20px;
+      }
+      footer .Split{
+        max-width: 300px;
+      }
+      a{
+        text-decoration: none;
+      }
+      .ContactWay{
+        display:flex;
+        font-size: 30px;
+        column-gap: 30px;
+        margin-top: 60px;
+        cursor: pointer;
+      }
+      .ContactWay span{
+        transition: all 0.6s;
+      }
+      .ContactWay span:hover{
+        transform: translateY(30px);
+      }
+      .icon{
+        margin-right: 10px;
+      }
+      .Card{
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        margin-top: 30px;
+      }
+      .CardDes{
+        display:flex;
+        flex-direction: row;
+        justify-content:center ;
+        padding: 20px;
+        background-color: #303942;
+      }
+      .Portfolio{
+        padding-bottom: 60px;
+      }
+      .PreviewWork{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+        column-gap: 30px;
+      }
+      a{
+        color: white;
+      }
+      #welcome-section{
+        min-width: 100vh !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="navbar">
+      <span class="Split"></span>
+      <ul>
+        <a href="#welcome-section"><li>About</li></a>
+        <a href="#Portfolio"><li>Work</li></a>
+        <a href="#Together"><li>Contact</li></a>
+      </ul>
+    </header>
+    <main>
+      <section class="Section About" id="welcome-section">
+        <h1>Hey I am Tadashi Amano</h1>
+        <p>Full Stack Web Developer</p>
+      </section>
+      <section class="Section Portfolio" id="Portfolio">
+        <h1>These are my projects</h1>
+        <div class="PreviewWork">
+          <div class="Card project-tile" id="1">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+            <div class="CardDes">
+              <a href="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+                Tribute Page
+              </a>
+                
+            </div>
+          </div>
+          <div class="Card project-tile" id="2">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+            <div class="CardDes">
+              <a href="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+              Tribute Page
+              </a>
+            </div>
+          </div>
+          <div class="Card project-tile" id="3">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+            <div class="CardDes">
+              <a href="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+              Tribute Page
+              </a>
+            </div>
+          </div>
+          <div class="Card project-tile" id="4">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+            <div class="CardDes">
+              <a href="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+              Tribute Page
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Section Together" id="Together">
+        <h1>Let's work together</h1>
+        <p>How do you take your coffee?</p>
+        <div class="ContactWay">
+          <span><i class="fab fa-facebook-f icon"></i>Facebook</span>
+          <a class="profile-link" href="https://github.com/goldstardev2002" target="_blank"><span><i class="fab fa-github icon"></i>GitHub</span></a>
+          <span><i class="fab fa-twitter icon"></i>Twitter</span>
+          <span><i class="fas fa-envelope-square icon"></i>Send a mail</span>
+          <span><i class="fas fa-phone icon"></i>Call me</span>
+        </div>
+      </section>
+      <footer>
+          <p>
+            **This is just a fake portfolio. All the projects and contact details given are not real.
+          </p>
+          <span class="Split"></span>
+          <p>
+            © Created for freeCodeCamp 
+          </p>
+      </footer>
+    </main>
+  </body>
+</html>
